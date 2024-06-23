@@ -50,13 +50,14 @@ What is Data Binding ?   =>   Basically, it is to send data to the design area. 
 
 > In your activity xml:
 ```
-   # set the data and variable
+   # set the data and variable:
     <data>
         <variable name="MainActivityObject" type="com.example.kotlin_mvmm_beginner.MainActivity" />
     </data>
 ```
 > In your Activity:
 ```
+   # we should bind our objects:
     binding.mainActivityObject  = this
 ```
 
