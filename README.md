@@ -172,4 +172,31 @@ fun clickButtonMultiply(number1Text: String, number2Text: String) {
 }
 ```
 
+### Repository 🏦
+
+Firstly, Transfer the operations to the Repository class, Then:
+```kotlin
+var mathResult = MutableLiveData<String>().apply { value = "0" }
+fun getSomeMathResult() : MutableLiveData<String>{
+    return mathResult
+}
+```
+
+In your ViewModel:
+```kotlin
+var mRepo = MathRepository()
+init {
+    calculatedResult = mRepo.getSomeMathResult()
+}
+# Usage:
+fun clickButtonMultiply(number1Text: String, number2Text: String){
+        mRepo.multiply(number1Text,number2Text)
+}
+```
+
+ 
+
+
+
+
 This structure will help beginners to set up and understand Kotlin MVVM architecture effectively. 🚀
