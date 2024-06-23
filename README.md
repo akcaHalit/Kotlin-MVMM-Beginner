@@ -2,7 +2,7 @@
 
 ---
 
-## At first, we created the project and set the activity_main.xml
+## I assume that you created the project and set your .xml as you wanted.
 
 ## We must set the Data Binding to use MVMM structure.
 Basically, it is to send data to the design area. It provides ease for design and class management with less coding.
