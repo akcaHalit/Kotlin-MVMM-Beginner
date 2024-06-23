@@ -132,7 +132,7 @@ class MainActivityViewModel : ViewModel() {
 In your activity:
 ```kotlin
 private val viewModel: MainActivityViewModel by viewModels()
-binding.viewModel = viewModel
+binding.calculatedResult = viewModel.calculatedResult
 ```
 
 ---
