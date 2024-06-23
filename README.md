@@ -4,11 +4,12 @@
 ---
 ---
 
-## At first, We must set the Data Binding to use MVMM structure.
-<h1 style="text-align: center;">At first, We must set the Data Binding to use MVMM structure.</h1>
-
-
+At first, we must set the Data Binding 
 What is Data Binding ?   =>   Basically, it is to send data to the design area. It provides ease for design and class management with less coding.
+
+## At first, We must set the Data Binding to use MVMM structure.
+<h1 style="text-align: center;font-size: 24px;"> Setting Data Binding </h1>
+
 
 > Enable data binding in build.gradle.kts:
 ```
