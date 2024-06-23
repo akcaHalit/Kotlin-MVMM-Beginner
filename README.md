@@ -126,7 +126,43 @@ For this example, the function clickButtonAdd should be exists in MainActivity g
     private val viewModel:MainActivityViewModel by viewModels()
 # Bind
     binding.calculatedResult = viewModel.calculatedResult
-
 ```
+
+
+# LIVE DATA
+
+> Installation
+```
+    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.8.2")
+```
+
+> Make your datas live:
+```
+   # In ViewModelActivity:
+   var calculatedResult = MutableLiveData<String>()
+   init {
+        calculatedResult = MutableLiveData<String>("0")
+    }
+```
+> Now, how to use your live datas in your ViewModel Activity:
+```
+  calculatedResult.value = result.toString()
+```
+> Now, how to use your live datas in your Activity:
+```
+  # observe your live datas
+   viewModel.calculatedResult.observe(this,  { lambdaresult ->
+      binding.calculatedResult = lambdaresult
+   })
+```
+> And so, you can't use binding:         binding.calculatedResult = viewModel.calculatedResult
+```
+  fun clickButtonMultiply(number1Text: String, number2Text: String){
+    viewModel.clickButtonMultiply(number1Text,number2Text)
+    // before livedata: binding.calculatedResult = viewModel.calculatedResult     
+  }
+```
+
+
 
 
