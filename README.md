@@ -7,8 +7,11 @@
 At first, we must set the Data Binding 
 What is Data Binding ?   =>   Basically, it is to send data to the design area. It provides ease for design and class management with less coding.
 
+<div style="text-align: center;">
+   <h1 style=font-size: 24px;"> Setting Data Binding </h1>
+</div>
+
 ## At first, We must set the Data Binding to use MVMM structure.
-<h1 style="text-align: center;font-size: 24px;"> Setting Data Binding </h1>
 
 
 > Enable data binding in build.gradle.kts:
