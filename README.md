@@ -72,7 +72,7 @@ For this example, the function clickButtonAdd should be exists in MainActivity g
 ```
 ---
 
-# SEND DATA to the View Page
+# SEND DATA to the View Page(XML)
 
 > Assume that you have a variable that: `<variable name="calculatedResult" type="String"/>`  
 ```
@@ -86,7 +86,7 @@ For this example, the function clickButtonAdd should be exists in MainActivity g
      binding.calculatedResult = "0"
 ```
 
-> We also can write our own codes on ViewPage:   just for practicing
+> We also can write our own codes on the View Page:   just for practicing
 ```
  android:textColor="@{Integer.parseInt(calculatedResult) > 50 ? @color/purple : @color/black }"
  android:visibility="@{Integer.parseInt(calculatedResult) > 1000000 ? View.INVISIBLE : View.VISIBLE }"
