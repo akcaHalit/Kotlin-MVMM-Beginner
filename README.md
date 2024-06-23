@@ -168,6 +168,7 @@ Handle button clicks in your activity:
 ```kotlin
 fun clickButtonMultiply(number1Text: String, number2Text: String) {
     viewModel.clickButtonMultiply(number1Text, number2Text)
+  // We don't need to use it anymore: binding.calculatedResult = viewModel.calculatedResult
 }
 ```
 
