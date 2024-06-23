@@ -4,8 +4,9 @@
 
 ## I assume that you created the project and set your .xml as you wanted.
 
-## We must set the Data Binding to use MVMM structure.
-Basically, it is to send data to the design area. It provides ease for design and class management with less coding.
+## At first, We must set the Data Binding to use MVMM structure.
+
+What is Data Binding ?   =>   Basically, it is to send data to the design area. It provides ease for design and class management with less coding.
 
 > Enable data binding in build.gradle.kts:
 ```
