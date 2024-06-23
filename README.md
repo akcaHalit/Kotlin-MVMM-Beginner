@@ -92,6 +92,16 @@ For this example, the function clickButtonAdd should be exists in MainActivity g
  android:visibility="@{Integer.parseInt(calculatedResult) > 1000000 ? View.INVISIBLE : View.VISIBLE }"
 ```
 
+# VIEW MODEL
+
+> Installation (build.gradle.kts):
+```
+# dependencies { ...
+    implementation ("androidx.lifecycle:lifecycle-viewmodel:2.3.0")
+    implementation ("androidx.activity:activity-ktx:1.2.0")
+#...} 
+```
+
 
 
 
