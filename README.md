@@ -74,17 +74,17 @@ For this example, the function clickButtonAdd should be exists in MainActivity g
 
 # SEND DATA to the View Page
 
-> Assume that you have a variable that:
+> Assume that you have a variable that: `<variable name="calculatedResult" type="String"/>`  
 ```
-        <variable name="calculatedResult" type="String"/>
-```
->How to use it:
-```
-        android:text="@{calculatedResult}"
+     <EditText ...
+     android:text="@{calculatedResult}"
+    ... />
 ```
 
-
-
+> Now we don't need to use these ones: `binding.resultText.text = "0"`
+```
+     binding.calculatedResult = "0"
+```
 
 
 
