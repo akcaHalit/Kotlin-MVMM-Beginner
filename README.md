@@ -1,6 +1,5 @@
 # Kotlin MVMM for Beginners
 
-
 **I assume that you created the project and set your .xml as you wanted.**
 ---
 
