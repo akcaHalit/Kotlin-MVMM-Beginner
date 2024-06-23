@@ -70,6 +70,22 @@ For this example, the function clickButtonAdd should be exists in MainActivity g
         With Parameter: android:onClick="@{() ->  mainActivityObject.clickButtonAdd(number1Text.getText().toString(),number2Text.getText().toString())}"
     ... />
 ```
+---
+
+# SEND DATA to the View Page
+
+> Assume that you have a variable that:
+```
+        <variable name="calculatedResult" type="String"/>
+```
+>How to use it:
+```
+        android:text="@{calculatedResult}"
+```
+
+
+
+
 
 
 
