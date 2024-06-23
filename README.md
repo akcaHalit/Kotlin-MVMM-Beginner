@@ -25,7 +25,21 @@ Basically, it is to send data to the design area. It provides ease for design an
 # Your xml codes...
 </layout>
 ```
+> Set data binding for your activity: we provide the access.
+```
+    private lateinit var binding: ActivityMainBinding
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = DataBindingUtil.setContentView(this,R.layout.activity_main)
+    }
+```
+
 > Now, data binding is ready to use.
+
+> Then, How to access to design and visual objects 
+```
+   binding.<view's id>  
+```
 
 
 
