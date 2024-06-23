@@ -111,11 +111,9 @@ For this example, the function clickButtonAdd should be exists in MainActivity g
 #...} 
 ```
 
+## How to use ViewModel: 
 
-
-
-
-
-
+> Create a new class that ..ActivityViewModel
+<img width="441" alt="Screenshot 2024-06-23 at 22 57 20" src="https://github.com/akcaHalit/Kotlin-MVMM-Beginner/assets/103420587/1ff6c81c-b955-40b2-8d4d-c877f3f040b2">
 
 
