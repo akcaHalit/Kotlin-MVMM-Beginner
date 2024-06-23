@@ -48,5 +48,32 @@ What is Data Binding ?   =>   Basically, it is to send data to the design area. 
 
 # EVENT HANDLE
 
+> In your activity xml:
+```
+   # set the data and variable:
+    <data>
+        <variable name="MainActivityObject" type="com.example.kotlin_mvmm_beginner.MainActivity" />
+    </data>
+```
+> In your Activity:
+```
+   # we should bind our objects:
+    binding.mainActivityObject  = this
+```
+
+
+```
+   # how to use:  for example button:
+For this example, the function clickButtonAdd should be exists in MainActivity globally.
+    <Button ...
+        No Parameter: android:onClick="@{() ->  mainActivityObject.clickButtonAdd()}"
+        With Parameter: android:onClick="@{() ->  mainActivityObject.clickButtonAdd(number1Text.getText().toString(),number2Text.getText().toString())}"
+    ... />
+```
+
+
+
+
+
 
 
