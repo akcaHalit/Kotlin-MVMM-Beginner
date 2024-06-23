@@ -5,6 +5,8 @@
 ---
 
 ## At first, We must set the Data Binding to use MVMM structure.
+<h1 style="text-align: center;">At first, We must set the Data Binding to use MVMM structure.</h1>
+
 
 What is Data Binding ?   =>   Basically, it is to send data to the design area. It provides ease for design and class management with less coding.
 
