@@ -119,8 +119,7 @@ For this example, the function clickButtonAdd should be exists in MainActivity g
 > Transfer the data, operations: 
 <img width="647" alt="Screenshot 2024-06-23 at 23 09 15" src="https://github.com/akcaHalit/Kotlin-MVMM-Beginner/assets/103420587/6f428d5d-0b44-4cc1-bf2d-d66c1b926ba1">
 
-
-
+>
 > The variable(vievModel) that binds the Activity and its ViewModel:
 ```
 # Create
