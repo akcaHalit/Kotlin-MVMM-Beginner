@@ -36,9 +36,7 @@ What is Data Binding ?   =>   Basically, it is to send data to the design area. 
     }
 ```
 
-> Now, data binding is ready to use.
-
-> Then, How to access to design and visual objects 
+> Now, data binding is ready to use.     Then, How to access to design and visual objects 
 ```
    binding.<view's id>  
 ```
