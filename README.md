@@ -117,6 +117,12 @@ For this example, the function clickButtonAdd should be exists in MainActivity g
 <img width="441" alt="Screenshot 2024-06-23 at 22 57 20" src="https://github.com/akcaHalit/Kotlin-MVMM-Beginner/assets/103420587/1ff6c81c-b955-40b2-8d4d-c877f3f040b2">
 
 > The variable(vievModel) that binds the Activity and its ViewModel:
-<img width="536" alt="Screenshot 2024-06-23 at 23 00 34" src="https://github.com/akcaHalit/Kotlin-MVMM-Beginner/assets/103420587/42007d83-2233-4d05-b039-6d8bd4849279">
+```
+# Create
+    private val viewModel:MainActivityViewModel by viewModels()
+# Bind
+    binding.calculatedResult = viewModel.calculatedResult
+
+```
 
 
