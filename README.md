@@ -86,7 +86,11 @@ For this example, the function clickButtonAdd should be exists in MainActivity g
      binding.calculatedResult = "0"
 ```
 
-
+> We also can write our own codes on ViewPage:   just for practicing
+```
+ android:textColor="@{Integer.parseInt(calculatedResult) > 50 ? @color/purple : @color/black }"
+ android:visibility="@{Integer.parseInt(calculatedResult) > 1000000 ? View.INVISIBLE : View.VISIBLE }"
+```
 
 
 
