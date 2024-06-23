@@ -34,13 +34,21 @@ android {
         jvmTarget = "1.8"
     }
     buildFeatures{
+        //noinspection DataBindingWithoutKapt
         dataBinding = true
     }
 }
 
-dependencies {
+val kotlin_version = "1.5.31"
 
-    implementation ("androidx.lifecycle:lifecycle-viewmodel:2.8.2")
+
+dependencies {
+    // Live Data
+    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.8.2")
+
+    // ViewModel
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.2")
+
     implementation ("androidx.activity:activity-ktx:1.9.0")
 
     implementation("androidx.core:core-ktx:1.9.0")
