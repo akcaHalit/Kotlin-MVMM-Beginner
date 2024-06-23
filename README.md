@@ -94,13 +94,14 @@ For this example, the function clickButtonAdd should be exists in MainActivity g
 
 # VIEW MODEL
 
-> Why ViewModel:
+> Why ViewModel ?
 - The main purpose of ViewModel is to organize data that will feed the interface.
 - Additionally, it preserves data during page rotations (switching between portrait and landscape orientations).
 - By separating interface (Activity) from data, we can create a more controlled structure.
 - Within ViewModel, we can include operations to be performed on the page.
 - In Activity, we transfer data to the interface.
-- In ViewModel, tasks such as retrieving data from a database, performing mathematical operations on the interface, etc., can be done. We can use the LiveData structure to observe changes in data.
+- In ViewModel, tasks such as retrieving data from a database, performing mathematical operations on the interface, etc., can be done.
+- We can use the LiveData structure to observe changes in data.
 
 > Installation (build.gradle.kts):
 ```
@@ -109,6 +110,9 @@ For this example, the function clickButtonAdd should be exists in MainActivity g
     implementation ("androidx.activity:activity-ktx:1.2.0")
 #...} 
 ```
+
+
+
 
 
 
