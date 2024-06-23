@@ -10,44 +10,40 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this,R.layout.activity_main)
-
+        binding.mainActivityObject  = this
 
         binding.resultText.text = "0"
 
-        binding.buttonAdd.setOnClickListener{
-            val number1Text = binding.number1Text.text.toString()
-            val number2Text = binding.number2Text.text.toString()
-            val number1 = number1Text.toInt()
-            val number2 = number2Text.toInt()
-            val result = number1 + number2
-            binding.resultText.text = result.toString()
-        }
-
-        binding.buttonSub.setOnClickListener{
-            val number1Text = binding.number1Text.text.toString()
-            val number2Text = binding.number2Text.text.toString()
-            val number1 = number1Text.toInt()
-            val number2 = number2Text.toInt()
-            val result = number1 - number2
-            binding.resultText.text = result.toString()
-        }
-
-        binding.buttonMult.setOnClickListener{
-            val number1Text = binding.number1Text.text.toString()
-            val number2Text = binding.number2Text.text.toString()
-            val number1 = number1Text.toInt()
-            val number2 = number2Text.toInt()
-            val result = number1 * number2
-            binding.resultText.text = result.toString()
-        }
-
-        binding.buttonDiv.setOnClickListener{
-            val number1Text = binding.number1Text.text.toString()
-            val number2Text = binding.number2Text.text.toString()
-            val number1 = number1Text.toInt()
-            val number2 = number2Text.toInt()
-            val result = number1 / number2
-            binding.resultText.text = result.toString()
-        }
+        // Not Necessary Now
+        binding.buttonAdd.setOnClickListener{}
+        binding.buttonSub.setOnClickListener{}
+        binding.buttonMult.setOnClickListener{}
+        binding.buttonDiv.setOnClickListener{}
     }
+
+    fun clickButtonMultiply(number1Text: String, number2Text: String){
+        val number1 = number1Text.toInt()
+        val number2 = number2Text.toInt()
+        val result = number1 * number2
+        binding.resultText.text = result.toString()
+    }
+    fun clickButtonDivide(number1Text: String, number2Text: String){
+        val number1 = number1Text.toInt()
+        val number2 = number2Text.toInt()
+        val result = number1 / number2
+        binding.resultText.text = result.toString()
+    }
+    fun clickButtonAdd(number1Text: String, number2Text: String){
+        val number1 = number1Text.toInt()
+        val number2 = number2Text.toInt()
+        val result = number1 + number2
+        binding.resultText.text = result.toString()
+    }
+    fun clickButtonSubtract(number1Text: String, number2Text: String){
+        val number1 = number1Text.toInt()
+        val number2 = number2Text.toInt()
+        val result = number1 - number2
+        binding.resultText.text = result.toString()
+    }
+
 }
