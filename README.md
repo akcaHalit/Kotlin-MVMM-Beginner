@@ -10,6 +10,8 @@ What is Data Binding ?   =>   Basically, it is to send data to the design area. 
 <div style="text-align: center;">
    <h1 style=font-size: 24px;"> Setting Data Binding </h1>
 </div>
+<center>This text will be centered</center>
+
 
 ## At first, We must set the Data Binding to use MVMM structure.
 
