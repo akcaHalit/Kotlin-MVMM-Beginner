@@ -1,9 +1,8 @@
 # Kotlin MVMM for Beginners
 
+# At first, we created the project and set the activity_main.xml
 
-> 1- At first, we created the project and set the activity_main.xml
-
-> 2- We must set the Data Binding to use MVMM structure.
+## We must set the Data Binding to use MVMM structure.
 Basically, it is to send data to the design area. It provides ease for design and class management with less coding.
 
 > Enable data binding in build.gradle.kts:
