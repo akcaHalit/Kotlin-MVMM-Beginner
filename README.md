@@ -8,7 +8,7 @@ At first, we must set the Data Binding
 
 What is Data Binding ?   =>   Basically, it is to send data to the design area. It provides ease for design and class management with less coding.
 
-## Set the Data Binding
+# Set the Data Binding
 
 
 > Enable data binding in build.gradle.kts:
